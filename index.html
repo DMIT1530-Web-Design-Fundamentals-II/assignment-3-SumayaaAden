@@ -1,26 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Totally Semantic Title</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Studio</title>
 
-		<!-- Meta Information -->
-		<meta name="author" content=" ">
-		<meta name="description" content=" ">
+    <!-- Meta Information -->
+    <meta name="author" content="Sumaya Aden" />
+    <meta name="description" content="Advanced Web Design Assignment" />
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
-		<div class="container">
-			<h1>Hello, world!</h1>
-		</div>
-	</body>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/modern-reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="flex-container">
+        <h1 class="sr-only">Creative Studio</h1>
+        <div class="logo">
+          <img
+            src="img/svg/creative-studio-logo.svg"
+            alt=" Creative Studio Logo"
+          />
+        </div>
+        <div class="menu-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <nav class="sidebar">
+        <ul class="main-menu">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Work</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <form class="search-form">
+              <div class="input-wrapper">
+                <img
+                  src="img/svg/search-icon.svg"
+                  class="input-icon"
+                  alt="Search Icon"
+                />
+                <input type="text" placeholder="   Search" />
+              </div>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>We Are <br />Creative Studio</h2>
+      <p>
+        We are a multi-disciplinary design, development, and digital marketing
+        agency based in New York and Manhattan Beach. We specialize in creating
+        experiences and engagements.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-filled">
+          <a href="#">Let's Work Together!</a>
+        </button>
+        <button class="btn btn-outlined"><a href="#">View Our Work</a></button>
+      </div>
+    </section>
+
+    <section class="our-work">
+      <h2>Our Work</h2>
+      <p class="header-description">
+        We partner with big brands to create powerful products and experiences.
+        Take a look at our projects!
+      </p>
+      <div class="scroll-wrapper">
+        <div class="scroll-column">
+          <!-- Card 1 -->
+          <div class="work-card">
+            <img
+              src="img/creative-co-branding.jpg"
+              alt=" planning creative-co-branding on a laptop"
+            />
+            <div class="image-caption-dark">
+              <h3>Branding</h3>
+              <p class="description">Very Good Creative Co.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="work-card">
+            <img
+              src="img/le-buzz-website-design.jpg"
+              alt="Website Design Development on a laptop"
+            />
+            <div class="image-caption-seafoam-green">
+              <h3>Website Design Development</h3>
+              <p class="description">Le Buzz</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="work-card">
+            <img
+              src="img/binance-business-card-design.jpg"
+              alt="Binance app on a mobile phone"
+            />
+            <div class="image-caption-dark">
+              <h3>Branding</h3>
+              <p class="description">Binance</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="work-card">
+            <img src="img/digipool-app-design-and-dev.jpg" alt="Digipool App" />
+            <div class="image-caption-seafoam-green">
+              <h3>Branding</h3>
+              <p class="description">Binance</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-column">
+          <!-- Card 5 -->
+          <div class="work-card">
+            <img
+              src="img/digital-products-web-design.jpg"
+              alt="Digital Product Design"
+            />
+            <div class="image-caption-seafoam-green">
+              <h3>Website Design Development</h3>
+              <p class="description">Digital Product</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="work-card">
+            <img src="img/signmud-logo-design.jpg" alt="Signmud logo Design" />
+            <div class="image-caption-dark">
+              <h3>Branding - Logo</h3>
+              <p class="description">Signmud</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="work-card">
+            <img
+              src="img/ga-photography-digital-marketing.jpg"
+              alt="Digital Marketing"
+            />
+            <div class="image-caption-seafoam-green">
+              <h3>Digital Marketing</h3>
+              <p class="description">AP Photography</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="work-card">
+            <img
+              src="img/apollo-studios-prototyping.jpg"
+              alt="Web Design on a notebook"
+            />
+            <div class="image-caption-dark">
+              <h3>UX & Web Design</h3>
+              <p class="description">Apollo Holdings inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-work">
+        <button class="btn">
+          <a href="#">View All of Our Work</a
+          ><svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fal"
+            data-icon="arrow-right"
+            class="svg-inline--fa fa-arrow-right fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="#191654"
+              d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="what-we-do">
+      <div>
+        <h2>What We Do!</h2>
+        <p class="header-description">
+          We partner with company leaders to help you understand your customers
+          better, and build the right products and experiences to serve them. We
+          work with you to define your vision and improve your business
+          outcomes.
+        </p>
+        <div class="view-service">
+          <button class="btn">
+            <a href="#">View Our Services</a
+            ><svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fal"
+              data-icon="arrow-right"
+              class="svg-inline--fa fa-arrow-right fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#191654"
+                d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="services">
+        <div class="service-item">
+          <img src="img/branding image.jpg" alt="Creating a branding logo" />
+          <h3>Branding</h3>
+          <p>
+            Branding is one of the most crucial aspects of any business. At
+            Creative Studio, we value our clients' creative identities and offer
+            long-term solutions.
+          </p>
+        </div>
+        <div class="service-item">
+          <img
+            src="img/app-design-and-development.jpg"
+            alt="The word 'design' from a dictionary"
+          />
+          <h3>Web Design</h3>
+          <p>
+            We craft exceptional interactive digital user experiences that
+            extend across a brand's entire ecosystem.
+          </p>
+        </div>
+        <div class="service-item">
+          <img
+            src="img/app-image.jpg"
+            alt="App Design and Development meeting"
+          />
+          <div>
+            <h3>App Design & Development</h3>
+            <p>
+              We build apps with cutting-edge technology that provide
+              interactive solutions and improve user experience for everyday
+              problems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="who-we-are">
+      <div class="who-we-are-content">
+        <h2>Who We Are</h2>
+        <p>
+          We are an award-winning creative multi-disciplinary design,
+          development, and digital marketing agency consisting of a 60-strong
+          team of designers, engineers, and strategists. We have been crafting
+          digital and brand experiences for over 15 years, and we love all
+          challenges that come our way.
+        </p>
+        <p>
+          We are authentic, down-to-earth, and put our clients' needs first
+          every time. We aim to be the brightest minds in digital-intellect, and
+          are always looking for better ways to create exceptional user
+          experiences.
+        </p>
+        <div class="learn-about-us">
+          <button class="btn">
+            <a href="#">Learn more about us</a>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fal"
+              data-icon="arrow-right"
+              class="svg-inline--fa fa-arrow-right fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#191654"
+                d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <img
+        class="learn-image"
+        src="img/office image.jpg"
+        alt="Group of people discussing a project"
+      />
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="offices">
+          <h3>Our Offices</h3>
+          <p>136 W 30th Street<br />New York, NY 10038</p>
+          <p>(310) 570 - 4482</p>
+          <p>Mon - Fri 9am - 5pm</p>
+          <p>1800 Larsson Street<br />Manhattan Beach, CA 90266</p>
+          <p>(424) 223 - 3767<br />Mon - Fri 8:30am - 4:30pm</p>
+          <p>
+            Email us, say hello!<br />
+            <a href="mailto:hello@creativestudio.com"
+              >hello@creativestudio.com</a
+            >
+          </p>
+        </div>
+        <div class="newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <input type="email" placeholder="Email Address" />
+          <button class="btn">Subscribe Now!</button>
+
+          <p class="unsubscribe-text">
+            You may unsubscribe from our monthly newsletter at any time. Check
+            out our Privacy Policy for more information on how we store and
+            protect your data.
+          </p>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="social-links">
+          <a href="#"
+            ><img src="img/svg/instagram-brands.svg" alt="Instagram Logo"
+          /></a>
+          <a href="#"
+            ><img src="img/svg/facebook-f-brands.svg" alt="Facebook Logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="img/svg/mailchimp-brands.svg"
+              alt="mailchimp brands Logo"
+          /></a>
+        </div>
+        <p class="footer-note">
+          © 2022 | For educational purposes only | Privacy Policy
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
